@@ -1,7 +1,7 @@
 google-websheets
 ================
 
-Take a Google Sheets document and easily feed it to DataTables (without using Publish to Web)
+Take a Google Sheets document and easily feed it to [DataTables](http://www.datatables.net/) (without using Publish to Web)
 
 ##Background/info
 
@@ -10,6 +10,8 @@ We love Google Sheets — we have Google Apps for Business, we do almost all of
 Slight snag, that — our corporate policy does not allow using "Publish to Web" for any documents.
 
 So, rather than have everyone store their projects in personal accounts (which we would either need to wrangle from them or lose when they leave), here's a handly little Google Apps Script that will allow you to free the sheets and use DataTables to make 'em all pretty and searchable.
+
+The example file links to the Google jQuery CDN and the DataTables CDN for its Javascript and CSS. 
 
 ##Note on accounts
 
