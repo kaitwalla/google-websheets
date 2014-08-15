@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css" />
+</head>
+<body>
+	<script type="text/javascript">
+	  var id = '1Y5Ow-0_ME30eVQdx3HuJqq_yOPKZrmWbma5cHC2irzk';
+
+	  window.onload = function() { init() };
+
+	  function init() {
+	    $.ajax({
+	    	url:'https://script.google.com/macros/s/AKfycbwQAXhbfD-FhSN16Tr70yTgw93_PF1fj_Z5qQbbT5Meoc7oOw4/exec?id='+id,
+	    	
+	    	success: function(e) {
+	    	
+		   		for (var i = 0; i < e.columns.length; i++) {
+		  			$('#table thead tr').append('<th>'+e.columns[i]+'</th>');
+		  		}
+		    	$('#table').DataTable({ data:e.data }); 		
+	    	} 
+	    });
+	  }
+	</script>
+	<table id="table">
+	<thead>
+		<tr>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+	</table>
+</body>
+</html>
